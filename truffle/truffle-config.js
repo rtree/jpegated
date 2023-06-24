@@ -15,6 +15,7 @@ module.exports = {
       gas: 4465030,
     },
     mumbai: {
+      //provider: () => new HDWalletProvider(MNEMONIC, `https://rpc-mumbai.maticvigil.com`),
       provider: () => new HDWalletProvider(MNEMONIC, `https://floral-wider-borough.matic-testnet.discover.quiknode.pro/1ca338a69ef1ab27e9090a156dbb179b1191dadc/`), //QuickNode
       network_id: 80001,
       confirmations: 2,

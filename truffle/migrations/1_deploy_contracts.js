@@ -1,5 +1,5 @@
-const JPEGated = artifacts.require("JPEGated");
+const TestNFT = artifacts.require("TestNFT");
 
 module.exports = function(deployer) {
-  deployer.deploy(JPEGated);
+  deployer.deploy(TestNFT);
 };
