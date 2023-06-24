@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@lit-protocol/lit-node-client": "^2.2.27",
+    "@lit-protocol/lit-node-client": "^2.2.28",
     "cookies": "^0.8.0",
     "js-cookie": "^3.0.5",
     "next": "13.4.7",
