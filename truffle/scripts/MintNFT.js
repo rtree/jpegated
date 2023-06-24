@@ -2,11 +2,9 @@ require("dotenv").config();
 
 const { TOKEN_URI, CONTRACT_ADDRESS, PUBLIC_ADDRESS } = process.env;
 
-// Loading the compiled contract Json
-const contractJson = require("../build/contracts/memeNFT.json");
+const contractJson = require("../build/contracts/TestNFT.json");
 
 module.exports = async function (callback) {
-  // web3 is injected by Truffle
   const contract = new web3.eth.Contract(
     contractJson.abi,
     CONTRACT_ADDRESS, // this is the address generated when running migrate
@@ -16,7 +14,7 @@ module.exports = async function (callback) {
   const network = await web3.eth.net.getNetworkType();
 
   // Generate a transaction to calls the `mintNFT` method
-  const tx = contract.methods.mintNFT(PUBLIC_ADDRESS, TOKEN_URI);
+  const tx = contract.methods.safeMint(PUBLIC_ADDRESS, TOKEN_URI);
   // Send the transaction to the network
   const receipt = await tx
     .send({

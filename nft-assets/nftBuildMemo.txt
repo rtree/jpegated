@@ -1,2 +1,16 @@
 TestNFT address
 0x41cC62022fEE8CEEFb3c3e07349FFDeA0c8F058a
+
+
+   > transaction hash:    0xcb0374e8189c8d04f256fcf19e9d27858abf04d160acd5eead182ee0477c4ecf
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x41cC62022fEE8CEEFb3c3e07349FFDeA0c8F058a
+   > block number:        37221992
+   > block timestamp:     1687608068
+   > account:             0x485A974140923524a74B0D72aF117852F31B412D
+   > balance:             0.207163910091109096
+   > gas used:            3111870 (0x2f7bbe)
+   > gas price:           2.500000016 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00777967504978992 ETH
+   
