@@ -9,7 +9,6 @@
 #  https://ethglobal-waterloo-rtree.infura-ipfs.io/ipfs/QmcifJP8TTMezb1pWZBSGXijdqdWnizAE6x9uiLtZFDuxc
 #  https://ethglobal-waterloo-rtree.infura-ipfs.io/ipfs/QmUvptUCdqsMwUXiRAxoUTdGCuwEm1QzCTgyRdfkB8yaWA
 
-
 curl "https://ipfs.infura.io:5001/api/v0/add" \
 -X POST \
 -F file=@"$3" \
