@@ -19,24 +19,53 @@
 4) Mint NFT
 
 
-TestNFT address
-0x41cC62022fEE8CEEFb3c3e07349FFDeA0c8F058a
 
 
-   > transaction hash:    0xcb0374e8189c8d04f256fcf19e9d27858abf04d160acd5eead182ee0477c4ecf
-   > Blocks: 0            Seconds: 0
-   > contract address:    0x41cC62022fEE8CEEFb3c3e07349FFDeA0c8F058a
-   > block number:        37221992
-   > block timestamp:     1687608068
+
+==================== Deploy ==========================================================================
+
+
+1_deploy_contracts.js
+=====================
+> Network name:    'goerli-fork'
+   > contract address:    0xCC0E6AD2F6BB72CaB5B2Faf181FC66B1E1bcB284
    > account:             0x485A974140923524a74B0D72aF117852F31B412D
-   > balance:             0.207163910091109096
-   > gas used:            3111870 (0x2f7bbe)
-   > gas price:           2.500000016 gwei
-   > value sent:          0 ETH
-   > total cost:          0.00777967504978992 ETH
+
+
+======================
+> Network name:    'goerli'
+   > contract address:    0xaff401797944CfE5e26fbCD789da496c32f52CC0
+   > account:             0x485A974140923524a74B0D72aF117852F31B412D
 
 
 
+======================
+> Network name:    'mumbai'
+   > transaction hash:    0x29b7106558df82abc946039a5bb1d849a60044e875fdde4f17be9398b49e4880
+   > contract address:    0x42747984FD172a03550Ea58bEC0f91c690f794a9
+   > account:             0x485A974140923524a74B0D72aF117852F31B412D
 
 
+
+Starting migrations...
+======================
+> Network name:    'linea'
+   > transaction hash:    0xda13d845fb2dbcb12e652d9cf599aca6f3ef403935f45aa7965bbefee3987c9e
+   > contract address:    0xA55b1bBa54B2d9F31f6B5a83BA2eDAc5320D0a22
+   > account:             0x485A974140923524a74B0D72aF117852F31B412D
+
+
+
+======================
+> Network name:    'polygonZkEvmTestnet'
+   > transaction hash:    0xa2e204e5dcb363409b0b314e2e695a14b8fdb89404ca3736cde7059282c4a679
+   > contract address:    0xA55b1bBa54B2d9F31f6B5a83BA2eDAc5320D0a22
+   > account:             0x485A974140923524a74B0D72aF117852F31B412D
+
+
+======================
+> Network name:    'XDCApothem'
+   > transaction hash:    0x5dab63a3de6536fad7905b10a46c9b2b7d419ed34ddb198674ad9c1758e29696
+   > contract address:    0x76D72a4bf89Bb2327759826046FabE9BDA884E8B
+   > account:             0x485A974140923524a74B0D72aF117852F31B412D
 
