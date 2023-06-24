@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import Link from 'next/link'
-import { UUIDContext } from '../context'
+import { UUIDContext,NetworkContext } from '../context'
 import { useRouter } from 'next/router'
 import { v4 as uuid } from 'uuid';
 
@@ -23,11 +23,11 @@ function MyApp({ Component, pageProps }) {
           Contact Us
         </a>
       </nav>
-      <UUIDContext.Provider value={{
-        id
-      }}>
-        <Component {...pageProps} />
-      </UUIDContext.Provider>
+      <NetworkContext.Provider value={{chain: 'mumbai'}}>
+        <UUIDContext.Provider value={{id}}>
+          <Component {...pageProps} />
+        </UUIDContext.Provider>
+      </NetworkContext.Provider>
     </div>
   )
 }

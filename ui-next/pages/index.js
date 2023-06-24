@@ -6,14 +6,9 @@ import { UUIDContext } from '../context'
 
 const contractJson = require("../../truffle/build/contracts/TestNFT.json");
 
-/**
- * access control conditions 
- * link : https://lit-protocol.github.io/lit-js-sdk/api_docs_html/#accesscontrolcondition
- */
 const accessControlConditions = [
   {
     contractAddress : contractJson.networks[80001].address, //80001 mumbai
-    //contractAddress: '0x43BdB58E5C202d946abF5396cDf83f784EA66C9c',
 
     standardContractType: 'ERC721',
     chain: 'mumbai',
@@ -28,17 +23,16 @@ const accessControlConditions = [
   }
 ]
 
-
 export default function Home() {
   const [connected, setConnected] = useState()
-  const { id } = useContext(UUIDContext)
+  const { id }                    = useContext(UUIDContext)
 
   async function connect() {
     const resourceId = {
       baseUrl: 'http://localhost:3000',
-      path: '/contactus',
+      path : '/contactus',
       orgId: "",
-      role: "",
+      role : "",
       extraData: id
     }
 
@@ -48,11 +42,6 @@ export default function Home() {
       console.log("Am Connected");
     }
 
-    /**
-     * Wallet Signatures
-     * AuthSig to local storage so that the user does not need to sign the message again
-     * link: https://developer.litprotocol.com/SDK/authSig
-     */
     const authSig = await LitJsSdk.checkAndSignAuthMessage({chain: 'mumbai'})
 
     await client.saveSigningCondition({ accessControlConditions, chain: 'mumbai', authSig, resourceId })
