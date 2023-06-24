@@ -4,13 +4,17 @@ import * as LitJsSdk from "@lit-protocol/lit-node-client";
 import Cookies from 'js-cookie'
 import { UUIDContext } from '../context'
 
+const contractJson = require("../../truffle/build/contracts/TestNFT.json");
+
 /**
  * access control conditions 
  * link : https://lit-protocol.github.io/lit-js-sdk/api_docs_html/#accesscontrolcondition
  */
 const accessControlConditions = [
   {
-    contractAddress: '0x43BdB58E5C202d946abF5396cDf83f784EA66C9c',
+    contractAddress : contractJson.networks[80001].address, //80001 mumbai
+    //contractAddress: '0x43BdB58E5C202d946abF5396cDf83f784EA66C9c',
+
     standardContractType: 'ERC721',
     chain: 'mumbai',
     method: 'balanceOf',

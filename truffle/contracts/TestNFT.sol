@@ -15,7 +15,7 @@ contract TestNFT is ERC721URIStorage, Ownable {
     constructor() ERC721("Test NFT", "TFT") {}
 
     function mintNFT(address recipient, string memory tokenURI)
-        public onlyOwner  // <--- Ensure only the owner can mint tokens
+        public  // <--- Ensure only the owner can mint tokens
         returns (uint256)
     {
         _tokenIds.increment();
