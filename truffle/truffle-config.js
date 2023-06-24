@@ -10,7 +10,7 @@ module.exports = {
       network_id: "1337"
     },
     goerli: {
-      provider: () => new HDWalletProvider(MNEMONIC, INFURA_API_KEY),
+      provider: () => new HDWalletProvider(MNEMONIC, INFURA_API_KEY), //Infura
       network_id: '5',
       gas: 4465030,
     },
@@ -26,7 +26,17 @@ module.exports = {
       provider: () => new HDWalletProvider(MNEMONIC, `https://rpc.goerli.linea.build`),
       network_id: 59140,
       },
+    polygonZkEvmTestnet: {
+      provider: () => new HDWalletProvider(MNEMONIC, `https://summer-multi-smoke.zkevm-testnet.quiknode.pro/09a975c3d4c349ea364b80a0a8bab0ed4d73c225/`), //quicknode
+      network_id: 1442 // polygon zkEVM testnet
     },
+    XDCApothem: {
+      provider: () => new HDWalletProvider(MNEMONIC, `https://erpc.apothem.network`),
+      network_id: 51, // XDC Apothem testnet
+      gasLimit: 6721975,
+      confirmation: 2,
+    },
+  },
   mocha: {
     // timeout: 100000
   },      
