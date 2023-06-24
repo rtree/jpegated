@@ -1,0 +1,8 @@
+{
+  "name": "TestNFT",
+  "description": "NFT for testing purposes, ETHGlobal Waterloo 2023",
+  "image": "https://ethglobal-waterloo-rtree.infura-ipfs.io/ipfs/QmckdtKmKvzj15PEGBCCj7tKkdZjkVBqUpuy2b3TWA9W57/noExt/2",
+  "attributes": [
+    { "trait_type": "event", "value": "ETHGlobal Waterloo 2023" }
+  ]
+}

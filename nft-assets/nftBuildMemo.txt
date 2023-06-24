@@ -1,22 +1,24 @@
 
 1) Upload img Folder to ipfs
     - Use infura dashboard
-
    e.g.
     https://ethglobal-waterloo-rtree.infura-ipfs.io/ipfs/QmckdtKmKvzj15PEGBCCj7tKkdZjkVBqUpuy2b3TWA9W57/noExt/1
 
-2) Upload metadata to ipfs
-    - TestNFT.json
+2) Make metadata for each NFT
     -> image url points to ipfs image folder
+
+3) Upload metadata Folder to ipfs
 
    URL
      https://ethglobal-waterloo-rtree.infura-ipfs.io/ipfs/QmZqw5WJ2yzWegBq4zYopRKUVw13LgnqSn68CagxqLZ9jY
 
 
-3) Deploy contract
-    - TestNFT.sol
+4) Rewrite .env to have Metadata URL
+    (Used for minting)
 
-4) Mint NFT
+5) Deploy contract
+
+6) Mint NFT
 
 
 
