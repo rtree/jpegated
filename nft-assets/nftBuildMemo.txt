@@ -1,3 +1,24 @@
+
+1) Upload img Folder to ipfs
+    - Use infura dashboard
+
+   e.g.
+    https://ethglobal-waterloo-rtree.infura-ipfs.io/ipfs/QmckdtKmKvzj15PEGBCCj7tKkdZjkVBqUpuy2b3TWA9W57/noExt/1
+
+2) Upload metadata to ipfs
+    - TestNFT.json
+    -> image url points to ipfs image folder
+
+   URL
+     https://ethglobal-waterloo-rtree.infura-ipfs.io/ipfs/QmZqw5WJ2yzWegBq4zYopRKUVw13LgnqSn68CagxqLZ9jY
+
+
+3) Deploy contract
+    - TestNFT.sol
+
+4) Mint NFT
+
+
 TestNFT address
 0x41cC62022fEE8CEEFb3c3e07349FFDeA0c8F058a
 
@@ -13,4 +34,9 @@ TestNFT address
    > gas price:           2.500000016 gwei
    > value sent:          0 ETH
    > total cost:          0.00777967504978992 ETH
-   
+
+
+
+
+
+
