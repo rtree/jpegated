@@ -6,7 +6,7 @@ https://twitter.com/rtree
 #### link to your deployed smart contract(s) on Polygonscan
  <https://mumbai.polygonscan.com/address/0x4f303ee9851cf84c9826cf690f68c2f57bd0305f>
 #### Link to your tweet: Tweet out the link to your Github repo and deployed smart contract.
- <[https://ethglobal.com/showcase/jpegated-4w5qs](https://twitter.com/rtree/status/1672854194225594369?s=20)>
+<https://twitter.com/rtree/status/1672854194225594369?s=20>
 
 ## Metamask Prize Eligibility - Just deploy on Linea
 #### Link to the deployed contract address on blockscout
