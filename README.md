@@ -24,3 +24,45 @@ Access https://10.30.3.251:3000 from Mobile.
 
 
 
+## Deployed Networks
+
+
+### Goerli
+
+   > Network name:    'goerli'
+   > Network id:      5
+   > transaction hash:    0x692c033e0895353e2016c2d54638ca455ccfba23633dbce649de60babd77b220
+   > contract address:    0x4934C573FA9a8B72EA0325e20CfA4d72365045C2
+   > block number:        9235146
+   > block timestamp:     1687650588
+
+
+
+### Mumbai
+   > Network name:    'mumbai'
+   > Network id:      80001
+   > transaction hash:    0xf3cf586dc431dc46326716202f95d035090af34037ffc63c136123a254ea26be
+   > contract address:    0x4f303Ee9851CF84c9826cf690f68c2f57bD0305f
+
+
+### Linea
+
+   > Network name:    'linea'
+   > Network id:      59140
+   > transaction hash:    0xbb257f98147e90a9db471ffca7a89ea85227cc189e01c99dd644aceafbbb130d
+   > contract address:    0x9234338ba58DC52fE65256855BF50dd12ae0b2c5
+
+
+### PolygonZkEvm Testnet
+
+   > Network name:    'polygonZkEvmTestnet'
+   > Network id:      1442
+   > transaction hash:    0x480304c096b48038d18beb1667d4959771c29a1f6e43f47b888f07c5bf20da6f
+   > contract address:    0x9234338ba58DC52fE65256855BF50dd12ae0b2c5
+
+### XDC Apothem
+
+   > Network name:    'XDCApothem'
+   > Network id:      51
+   > transaction hash:    0xe99c9969c23ab5fdb98ebeffce467e016162ec4821d350e112efdb044cc99869
+   > contract address:    0xd7C2a36786124738d54AdB710D59abc8d8CAca75

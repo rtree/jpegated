@@ -23,8 +23,8 @@ function MyApp({ Component, pageProps }) {
           Contact Us
         </a>
       </nav>
-      <NetworkContext.Provider value={{chain: 'mumbai'}}>
-        <UUIDContext.Provider value={{id}}>
+      <NetworkContext.Provider value={'mumbai'}>
+        <UUIDContext.Provider  value={{id}}>
           <Component {...pageProps} />
         </UUIDContext.Provider>
       </NetworkContext.Provider>
