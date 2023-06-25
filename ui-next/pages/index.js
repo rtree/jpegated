@@ -15,7 +15,7 @@ export default function Home() {
 
   const accessControlConditions = [
     {
-      contractAddress : contractJson.networks[80001].address, //80001 mumbai
+      contractAddress : contractJson.networks[59140].address, //80001 mumbai
       standardContractType: 'ERC721',
       chain: network,
       method: 'balanceOf',

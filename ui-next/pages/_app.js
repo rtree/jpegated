@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Flex direction="column" minH="100vh" bg={bg} w="100%" p={4} color="neon.500" justify="space-between" pb={8}>
-        <NetworkContext.Provider value={"mumbai"}>
+        <NetworkContext.Provider value={"lineaGoerli"}>
           <UUIDContext.Provider value={{ id }}>
             <Component {...pageProps} />
           </UUIDContext.Provider>
