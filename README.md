@@ -2,11 +2,23 @@
 A project repository for ETHGlobal Waterloo (2023)
 https://twitter.com/rtree
 
-## Polygon Prize Eligibility
-### link to your deployed smart contract(s) on Polygonscan
+## Polygon Prize Eligibility - Pool prize
+#### link to your deployed smart contract(s) on Polygonscan
  <https://mumbai.polygonscan.com/address/0x4f303ee9851cf84c9826cf690f68c2f57bd0305f>
-### Link to your tweet: Tweet out the link to your Github repo and deployed smart contract.
+#### Link to your tweet: Tweet out the link to your Github repo and deployed smart contract.
  <https://ethglobal.com/showcase/jpegated-4w5qs>
+
+## Metamask Prize Eligibility - Just deploy on Linea
+#### Link to the deployed contract address on blockscout
+<https://explorer.goerli.linea.build/tx/0xbb257f98147e90a9db471ffca7a89ea85227cc189e01c99dd644aceafbbb130d>
+#### Linea network configured in your code
+<https://github.com/rtree/jpegated/blob/main/truffle/truffle-config.js>
+#### Repos must contain a text file named “waterloo.txt” with the phrase “Keep calm and love Waterloo”
+<https://github.com/rtree/jpegated/blob/main/waterloo.txt>
+#### Code needs to be viewable on GitHub
+<https://github.com/rtree/jpegated/>
+#### Each submission should have a short video that describes scope and functionality of the dapp
+<https://ethglobal.com/showcase/jpegated-4w5qs> ※Top-left pic is movie.
 
 ## How to demo
 
