@@ -46,7 +46,7 @@ export async function getServerSideProps({ req, res, query }) {
 
   if (
     payload.baseUrl !== "http://localhost:3000"
-    || payload.path !== '/contactus'
+    || payload.path !== '/issue'
     || payload.extraData !== id
   ) {
     return {
