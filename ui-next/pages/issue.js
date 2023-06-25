@@ -8,7 +8,7 @@ export default function Protected(props) {
   if (!props.authorized) {
     return (
       <div className={styles.container}>
-        <h2 className={styles.largeText}>Build With Nouns. Get Funded.There's a way for everyone to get involved with Nouns. </h2>
+        <h2 className={styles.largeText}>Build With us. Get Funded. There's a way for everyone to get involved with us! </h2>
       </div>
       )
   }
