@@ -3,9 +3,10 @@ A project repository for ETHGlobal Waterloo (2023)
 https://twitter.com/rtree
 
 ## Polygon Prize Eligibility
-
-https://ethglobal.com/showcase/jpegated-4w5qs
-https://mumbai.polygonscan.com/address/0x4f303ee9851cf84c9826cf690f68c2f57bd0305f
+### link to your deployed smart contract(s) on Polygonscan
+ <https://mumbai.polygonscan.com/address/0x4f303ee9851cf84c9826cf690f68c2f57bd0305f>
+### Link to your tweet: Tweet out the link to your Github repo and deployed smart contract.
+ <https://ethglobal.com/showcase/jpegated-4w5qs>
 
 ## How to demo
 
