@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 import { UUIDContext, NetworkContext } from '../context'
 import { Button, Box } from "@chakra-ui/react";
 import { useRouter } from 'next/router'
-
+import { useNetwork } from 'wagmi'
 const contractJson = require("../../truffle/build/contracts/TestNFT.json");
 
 export default function Home() {
@@ -13,11 +13,30 @@ export default function Home() {
   const network                   = useContext(NetworkContext)
   const router                    = useRouter()
 
+  const { chain, chains } = useNetwork()
+
+  let networkid;
+  switch (chain) {
+    case 'goerli':
+      networkid = 5;
+      break;
+    case 'polygonMumbai':
+      networkid = 80001;
+      break;
+    case 'xdcTestnet':
+      networkid = 10001;
+      break;
+    case 'lineaTestnet':
+      networkid = 1007;
+      break;
+    default:
+      networkid = 5;
+  }
   const accessControlConditions = [
     {
-      contractAddress : contractJson.networks[59140].address, //80001 mumbai
+      contractAddress : contractJson.networks[networkid].address, //80001 mumbai
       standardContractType: 'ERC721',
-      chain: network,
+      chain,
       method: 'balanceOf',
       parameters: [
         ':userAddress'
@@ -38,19 +57,19 @@ export default function Home() {
       extraData: id
     }
 
-    const client = new LitJsSdk.LitNodeClient({ alertWhenUnauthorized: false })
+    const client = new LitJsSdk.LitNodeClient({ alertWhenUnauthorized: t })
     await client.connect()
     if(client) {
       console.log("Am Connected");
     }
 
     //useSignMessage
-    const authSig = await LitJsSdk.checkAndSignAuthMessage({chain: network})
+    const authSig = await LitJsSdk.checkAndSignAuthMessage({chain})
 
-    await client.saveSigningCondition({ accessControlConditions, chain: network, authSig, resourceId })
+    await client.saveSigningCondition({ accessControlConditions, chain, authSig, resourceId })
     try {
       const jwt = await client.getSignedToken({
-        accessControlConditions, chain: network, authSig, resourceId: resourceId
+        accessControlConditions, chain, authSig, resourceId: resourceId
       })
       Cookies.set('lit-auth', jwt, { expires: 1 })
 

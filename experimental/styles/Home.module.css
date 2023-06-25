@@ -227,3 +227,7 @@
     transform: rotate(0deg);
   }
 }
+
+.largeText {
+  font-size: 50px; /* Or whatever size you prefer */
+}

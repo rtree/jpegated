@@ -1,3 +1,33 @@
+
+
+import { EthereumClient, w3mConnectors, w3mProvider     } from '@web3modal/ethereum'
+import { Web3Modal, Web3Button                          } from '@web3modal/react'
+import { configureChains, createConfig, WagmiConfig     } from 'wagmi'
+import { goerli, polygonMumbai, xdcTestnet, lineaTestnet } from 'wagmi/chains'
+
+function WrapperApp({ Component, pageProps }){
+  const chains           = [ goerli, polygonMumbai, xdcTestnet, lineaTestnet ] // right seems not to exist: xdcTestnet, lineaTestnet
+  const projectId        = 'f6366bf277bf84b6d1da831b99be7fc6'     //specific for each project, get from https://cloud.walletconnect.com/sign-in
+  const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
+  const wagmiConfig      = createConfig({
+    autoConnect: true,
+    connectors: w3mConnectors({ projectId, version: 1, chains }),
+    publicClient
+  })
+  const ethereumClient = new EthereumClient(wagmiConfig, chains)
+  
+  return(
+    <>
+      <WagmiConfig config={wagmiConfig}>
+        <Web3Button />
+        <MyApp Component={Component} pageProps={pageProps} />
+      </WagmiConfig>
+      <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+    </>
+  )
+}
+
+//===================================================================================================
 import * as React from "react";
 import {
   ChakraProvider,
@@ -14,10 +44,7 @@ import { UUIDContext, NetworkContext } from "../context";
 import { useRouter } from "next/router";
 import { v4 as uuid } from "uuid";
 import "@fontsource/londrina-solid"; // Defaults to weight 400
-
 const id = uuid();
-
-// 1. Extend the theme to include custom colors.
 const theme = extendTheme({
   config: {
     initialColorMode: "dark",
@@ -29,7 +56,6 @@ const theme = extendTheme({
     },
   },
 });
-
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
@@ -79,4 +105,4 @@ function MyApp({ Component, pageProps }) {
     </ChakraProvider>
   );
 }
-export default MyApp;
+export default WrapperApp;
