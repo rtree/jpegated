@@ -4,7 +4,8 @@ https://twitter.com/rtree
 
 ## Polygon Prize Eligibility
 
-
+https://ethglobal.com/showcase/jpegated-4w5qs
+https://mumbai.polygonscan.com/address/0x4f303ee9851cf84c9826cf690f68c2f57bd0305f
 
 ## How to demo
 
